@@ -1,0 +1,22 @@
+[project]
+name = "cai"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "transformers (>=4.55.4,<5.0.0)",
+    "gradio (>=5.44.0,<6.0.0)",
+    "torch (>=2.8.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "cai", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
